@@ -270,6 +270,8 @@ export class NgChat implements OnInit, IChatController {
 
                 this.hasPagedHistory = this.adapter instanceof PagedHistoryChatAdapter;
 
+                console.log(this.fileUploadAdapter);
+
                 if (this.fileUploadUrl && this.fileUploadUrl !== "")
                 {
                     this.fileUploadAdapter = new DefaultFileUploadAdapter(this.fileUploadUrl, this._httpClient);
